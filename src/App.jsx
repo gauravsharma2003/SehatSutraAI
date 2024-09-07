@@ -5,15 +5,14 @@ import SmartAssistant from './pages/SmartAssistant';
 import AppointmentBooking from './pages/AppointmentBooking';
 import NotFound from './pages/NotFound'; 
 import SignInSignUp from './pages/SignInSignUp';
-import './App.css';
 import PaymentComponent from './components/PaymentComponent';
-
+import Dashboard from './components/Dashboard'; // Added the Dashboard component
+import './App.css';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Landing />,
-   
   },
   {
     path: "/smart-assistant",
@@ -29,9 +28,12 @@ const router = createBrowserRouter([
   },
   {
     path: "/sign-in",
-    element: <SignInSignUp/>
+    element: <SignInSignUp />,
   },
-  
+  {
+    path: "/dashboard",   // Added the Dashboard route
+    element: <Dashboard />,
+  },
   {
     path: "*",
     element: <NotFound />,
