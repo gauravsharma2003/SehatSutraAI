@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import axios from 'axios';
-import symptomsData from '../../symptoms.json';
+import symptomsData from '../symptoms.json';
 
 const HealthAssistantGeminiChatbot = () => {
   const [messages, setMessages] = useState([]);

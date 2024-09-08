@@ -4,7 +4,6 @@ import Footer from './Footer';
 const Landing = () => {
   return (
     <div>
-      <Header />
 
       {/* Hero Section */}
       <section >
@@ -15,10 +14,6 @@ const Landing = () => {
         />
         
       </section>
-
-      
-
-      <Footer/>
     </div>
   );
 };

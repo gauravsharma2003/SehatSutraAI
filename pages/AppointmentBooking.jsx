@@ -1,7 +1,7 @@
 // src/pages/AppointmentBooking.jsx
 import React from 'react';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
-import  doctorsData  from '../../doctorsData'
+import  doctorsData  from '../doctorsData'
 
 const AppointmentBooking = () => {
   const navigate = useNavigate(); // Initialize useNavigate hook
