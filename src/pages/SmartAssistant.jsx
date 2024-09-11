@@ -9,7 +9,7 @@ const HealthAssistantGeminiChatbot = () => {
   const chatBoxRef = useRef(null);
   const textareaRef = useRef(null);
 
-//   const API_KEY = "AIzaSyBIaNV7BI1qzg7GOWic703gy9qXmr1DHtQ";
+  const API_KEY = import.meta.env.VITE_GEMINI_KEY;
   const API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent";
 
   const HEALTH_ASSISTANT_PROMPT = `
